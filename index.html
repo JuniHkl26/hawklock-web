@@ -910,36 +910,71 @@ const PRODS = {
     tag: 'BLOQX V1 — 12V',
     nombre: 'BLOQX V1',
     precio: '$180.000',
-    desc: 'El bloqueador e inhabilitador vehicular con mayor alcance del mercado colombiano. Corte progresivo silencioso, sin alarmas, sin consumo de batería en reposo. Compatible con motos, carros y camionetas 12V.',
+    desc: 'El bloqueador e inhabilitador vehicular con mayor alcance del mercado colombiano. Corte progresivo silencioso, sin alarmas. Compatible con motos, carros y camionetas 12V.',
     wa: 'https://wa.me/573126332199?text=Hola!%20Quiero%20el%20BLOQX%20V1',
-    specs: [['Alcance','120 metros'],['Voltaje','12V'],['Controles','Hasta 32'],['Corte','Progresivo'],['Alarma','Ninguna — silencioso'],['Batería","Consumo mínimo — equivalente a un LED
+    specs: [
+      ['Alcance','120 metros'],
+      ['Voltaje','12V'],
+      ['Controles','Hasta 32'],
+      ['Corte','Progresivo'],
+      ['Alarma','Silencioso 100%'],
+      ['Reposo','0W — consumo cero'],
+      ['En uso','Equiv. a un LED'],
+      ['Vallet','Incluido'],
+      ['Garantia','12 meses'],
+      ['Manual','En la caja'],
+      ['Envio','Todo Colombia — Contraentrega']
+    ]
   },
   '24v': {
     tag: 'BLOQX 24V — CARGA PESADA',
     nombre: 'BLOQX 24V',
     precio: '$180.000',
-    desc: 'Versión diseñada para vehículos de trabajo 24V. Ideal para camiones de carga, buses de transporte público y privado, y flotas empresariales que requieren el máximo nivel de protección.',
+    desc: 'Version para vehiculos de trabajo 24V. Ideal para camiones, buses y flotas empresariales.',
     wa: 'https://wa.me/573126332199?text=Hola!%20Quiero%20el%20BLOQX%2024V',
-    specs: [['Alcance','120 metros'],['Voltaje','24V'],['Controles','Hasta 32'],['Corte','Progresivo'],['Compatible','Camiones y buses'],['Alarma','Ninguna — silencioso'],['Vallet','Incluido'],['Garantía','12 meses'],['Manual','En la caja'],['Envío','Todo Colombia — Contraentrega']]
+    specs: [
+      ['Alcance','120 metros'],
+      ['Voltaje','24V'],
+      ['Controles','Hasta 32'],
+      ['Corte','Progresivo'],
+      ['Compatible','Camiones y buses'],
+      ['Alarma','Silencioso 100%'],
+      ['Vallet','Incluido'],
+      ['Garantia','12 meses'],
+      ['Manual','En la caja'],
+      ['Envio','Todo Colombia — Contraentrega']
+    ]
   },
   pedal: {
     tag: 'ACCESORIO — MERCEDES BENZ',
     nombre: 'PEDAL MERCEDEZ',
     precio: '$250.000',
-    desc: 'Acelerador electrónico especializado para vehículos Mercedes Benz. Alta calidad y rendimiento óptimo. Consulta modelos compatibles por WhatsApp.',
+    desc: 'Acelerador electronico especializado para vehiculos Mercedes Benz. Alta calidad y rendimiento optimo.',
     wa: 'https://wa.me/573126332199?text=Hola!%20Quiero%20el%20Pedal%20Mercedez',
-    specs: [['Tipo','Acelerador electrónico'],['Compatible','Mercedes Benz'],['Estado','Disponible'],['Garantía','12 meses'],['Manual','En la caja'],['Envío','Todo Colombia — Contraentrega']]
+    specs: [
+      ['Tipo','Acelerador electronico'],
+      ['Compatible','Mercedes Benz'],
+      ['Estado','Disponible'],
+      ['Garantia','12 meses'],
+      ['Manual','En la caja'],
+      ['Envio','Todo Colombia — Contraentrega']
+    ]
   },
   lite: {
-    tag: 'BLOQX LITE — PRÓXIMAMENTE',
+    tag: 'BLOQX LITE — PROXIMAMENTE',
     nombre: 'BLOQX LITE',
-    precio: 'Próximamente',
-    desc: 'Versión compacta y accesible del sistema BLOQX. Misma tecnología de corte progresivo en un formato ligero, pensado especialmente para motos y carros de uso personal. En desarrollo.',
-    wa: 'https://wa.me/573126332199?text=Hola!%20Quiero%20información%20del%20BLOQX%20LITE',
-    specs: [['Estado','En desarrollo'],['Voltaje','12V'],['Corte','Progresivo'],['Alarma','Silencioso'],['Disponibilidad','Próximamente']]
+    precio: 'Proximamente',
+    desc: 'Version compacta del sistema BLOQX. Misma tecnologia de corte progresivo en formato ligero para motos y carros.',
+    wa: 'https://wa.me/573126332199?text=Hola!%20Quiero%20informacion%20del%20BLOQX%20LITE',
+    specs: [
+      ['Estado','En desarrollo'],
+      ['Voltaje','12V'],
+      ['Corte','Progresivo'],
+      ['Alarma','Silencioso'],
+      ['Disponibilidad','Proximamente']
+    ]
   }
 };
-
 function abrirProd(id) {
   try {
     const p = PRODS[id];
