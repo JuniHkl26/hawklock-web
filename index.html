@@ -498,7 +498,7 @@ footer p{font-family:'Share Tech Mono',monospace;font-size:0.65rem;color:#3a5070
         </div>
         <div class="prod-footer">
           <button class="prod-btn-detail" data-prod="v1">📋 Ver detalles</button>
-          <button class="prod-btn-wa" onclick="event.stopPropagation();window.open('https://wa.me/573126332199?text=Hola!%20Quiero%20el%20BLOQX%20V1','_blank')">◎ Cotizar</button>
+          <button class="prod-btn-wa" data-wompi="https://checkout.wompi.co/l/test_NQrBFJ">💳 Comprar</button>
         </div>
       </div>
     </div>
@@ -524,7 +524,7 @@ footer p{font-family:'Share Tech Mono',monospace;font-size:0.65rem;color:#3a5070
         </div>
         <div class="prod-footer">
           <button class="prod-btn-detail" data-prod="24v">📋 Ver detalles</button>
-          <button class="prod-btn-wa" onclick="event.stopPropagation();window.open('https://wa.me/573126332199?text=Hola!%20Quiero%20el%20BLOQX%2024V','_blank')">◎ Cotizar</button>
+          <button class="prod-btn-wa" data-wompi="https://checkout.wompi.co/l/test_Oio9MV">💳 Comprar</button>
         </div>
       </div>
     </div>
@@ -549,7 +549,7 @@ footer p{font-family:'Share Tech Mono',monospace;font-size:0.65rem;color:#3a5070
         </div>
         <div class="prod-footer">
           <button class="prod-btn-detail" data-prod="pedal">📋 Ver detalles</button>
-          <button class="prod-btn-wa" onclick="event.stopPropagation();window.open('https://wa.me/573126332199?text=Hola!%20Quiero%20el%20Pedal%20Mercedez','_blank')">◎ Cotizar</button>
+          <button class="prod-btn-wa" data-wompi="https://checkout.wompi.co/l/test_kVWzYZ">💳 Comprar</button>
         </div>
       </div>
     </div>
@@ -895,9 +895,11 @@ footer p{font-family:'Share Tech Mono',monospace;font-size:0.65rem;color:#3a5070
         Incluye manual completo en la caja. Llévalo a tu mecánico de confianza — cualquier técnico puede instalarlo fácilmente. También puedes encontrar un <a href="#distribuidores" onclick="cerrarProd()" style="color:var(--cyan)">distribuidor autorizado</a> en tu ciudad.
       </div>
       <div class="pm-actions">
+        <a id="pmBuy" href="#" target="_blank" class="btn-primary" style="font-size:0.75rem;padding:12px 28px;">💳 Comprar ahora</a>
         <a id="pmWa" href="#" target="_blank" class="btn-wa" style="font-size:0.75rem;padding:12px 28px;">◎ Cotizar por WhatsApp</a>
         <button onclick="cerrarProd()" class="btn-ghost" style="font-size:0.75rem;padding:12px 28px;">✕ Cerrar</button>
       </div>
+      <p style="font-size:0.65rem;color:var(--gray);font-family:Share Tech Mono,monospace;margin-top:0.5rem;letter-spacing:1px;">* Precios tentativos sujetos a cambio</p>
       <div class="pm-media-grid" id="pmMedia"></div>
     </div>
   </div>
@@ -909,69 +911,74 @@ const PRODS = {
   v1: {
     tag: 'BLOQX V1 — 12V',
     nombre: 'BLOQX V1',
-    precio: '$180.000',
-    desc: 'El bloqueador e inhabilitador vehicular con mayor alcance del mercado colombiano. Corte progresivo silencioso, sin alarmas. Compatible con motos, carros y camionetas 12V.',
+    precio: '$180.000*',
+    wompi: 'https://checkout.wompi.co/l/test_NQrBFJ',
     wa: 'https://wa.me/573126332199?text=Hola!%20Quiero%20el%20BLOQX%20V1',
+    desc: 'El bloqueador e inhabilitador vehicular con mayor alcance del mercado colombiano. Corte progresivo silencioso, sin alarmas. Compatible con motos, carros y camionetas 12V.',
     specs: [
-      ['Alcance','120 metros'],
-      ['Voltaje','12V'],
-      ['Controles','Hasta 32'],
-      ['Corte','Progresivo'],
-      ['Alarma','Silencioso 100%'],
-      ['Reposo','0W — consumo cero'],
-      ['En uso','Equiv. a un LED'],
-      ['Vallet','Incluido'],
-      ['Garantia','12 meses'],
-      ['Manual','En la caja'],
+      ['Alcance','120 metros'],['Voltaje','12V'],['Controles','Hasta 32'],
+      ['Corte','Progresivo'],['Alarma','Silencioso 100%'],
+      ['Reposo','0W — consumo cero'],['En uso','Equiv. a un LED'],
+      ['Vallet','Incluido'],['Garantia','12 meses'],['Manual','En la caja'],
       ['Envio','Todo Colombia — Contraentrega']
     ]
   },
   '24v': {
     tag: 'BLOQX 24V — CARGA PESADA',
     nombre: 'BLOQX 24V',
-    precio: '$180.000',
-    desc: 'Version para vehiculos de trabajo 24V. Ideal para camiones, buses y flotas empresariales.',
+    precio: '$180.000*',
+    wompi: 'https://checkout.wompi.co/l/test_Oio9MV',
     wa: 'https://wa.me/573126332199?text=Hola!%20Quiero%20el%20BLOQX%2024V',
+    desc: 'Version para vehiculos de trabajo 24V. Ideal para camiones, buses y flotas empresariales que requieren maxima proteccion.',
     specs: [
-      ['Alcance','120 metros'],
-      ['Voltaje','24V'],
-      ['Controles','Hasta 32'],
-      ['Corte','Progresivo'],
-      ['Compatible','Camiones y buses'],
-      ['Alarma','Silencioso 100%'],
-      ['Vallet','Incluido'],
-      ['Garantia','12 meses'],
-      ['Manual','En la caja'],
+      ['Alcance','120 metros'],['Voltaje','24V'],['Controles','Hasta 32'],
+      ['Corte','Progresivo'],['Compatible','Camiones y buses'],
+      ['Alarma','Silencioso 100%'],['Vallet','Incluido'],
+      ['Garantia','12 meses'],['Manual','En la caja'],
       ['Envio','Todo Colombia — Contraentrega']
     ]
   },
   pedal: {
     tag: 'ACCESORIO — MERCEDES BENZ',
     nombre: 'PEDAL MERCEDEZ',
-    precio: '$250.000',
-    desc: 'Acelerador electronico especializado para vehiculos Mercedes Benz. Alta calidad y rendimiento optimo.',
+    precio: '$250.000*',
+    wompi: 'https://checkout.wompi.co/l/test_kVWzYZ',
     wa: 'https://wa.me/573126332199?text=Hola!%20Quiero%20el%20Pedal%20Mercedez',
+    desc: 'Acelerador electronico especializado para vehiculos Mercedes Benz. Alta calidad y rendimiento optimo. Consulta tu modelo compatible.',
     specs: [
-      ['Tipo','Acelerador electronico'],
-      ['Compatible','Mercedes Benz'],
-      ['Estado','Disponible'],
-      ['Garantia','12 meses'],
-      ['Manual','En la caja'],
-      ['Envio','Todo Colombia — Contraentrega']
+      ['Tipo','Acelerador electronico'],['Compatible','Mercedes Benz'],
+      ['Estado','Disponible'],['Garantia','12 meses'],
+      ['Manual','En la caja'],['Envio','Todo Colombia — Contraentrega']
     ]
   },
   lite: {
-    tag: 'BLOQX LITE — PROXIMAMENTE',
+    tag: 'BLOQX LITE — ECONOMICO',
     nombre: 'BLOQX LITE',
-    precio: 'Proximamente',
-    desc: 'Version compacta del sistema BLOQX. Misma tecnologia de corte progresivo en formato ligero para motos y carros.',
-    wa: 'https://wa.me/573126332199?text=Hola!%20Quiero%20informacion%20del%20BLOQX%20LITE',
+    precio: '$140.000*',
+    wompi: 'https://checkout.wompi.co/l/test_C8jtot',
+    wa: 'https://wa.me/573126332199?text=Hola!%20Quiero%20el%20BLOQX%20LITE',
+    desc: 'Version economica y accesible del sistema BLOQX. Sin control remoto — activacion por boton sencillo. Ideal para quienes buscan proteccion basica a bajo costo.',
     specs: [
-      ['Estado','En desarrollo'],
-      ['Voltaje','12V'],
-      ['Corte','Progresivo'],
-      ['Alarma','Silencioso'],
-      ['Disponibilidad','Proximamente']
+      ['Alcance','120 metros'],['Voltaje','12V'],
+      ['Activacion','Boton sencillo'],['Control remoto','No incluido'],
+      ['Corte','Progresivo'],['Alarma','Silencioso 100%'],
+      ['Garantia','12 meses'],['Manual','En la caja'],
+      ['Stock','Disponible proximamente'],
+      ['Envio','Todo Colombia — Contraentrega']
+    ]
+  },
+  v2: {
+    tag: 'BLOQX V2 300M — FASE DE PRUEBAS',
+    nombre: 'BLOQX V2 300M',
+    precio: '$250.000*',
+    wompi: 'https://checkout.wompi.co/l/test_ITFoLn',
+    wa: 'https://wa.me/573126332199?text=Hola!%20Quiero%20informacion%20del%20BLOQX%20V2%20300M',
+    desc: 'La proxima generacion del sistema BLOQX. 300 metros de alcance real, control desde tu celular y nuevas funciones avanzadas. Actualmente en fase de pruebas.',
+    specs: [
+      ['Alcance','300 metros'],['Voltaje','12V'],
+      ['Control','Celular + control remoto'],['Corte','Progresivo'],
+      ['Alarma','Silencioso 100%'],['Estado','Fase de pruebas'],
+      ['Disponibilidad','Proximamente'],['Garantia','12 meses']
     ]
   }
 };
@@ -984,6 +991,16 @@ function abrirProd(id) {
     document.getElementById('pmPrecio').textContent = p.precio;
     document.getElementById('pmDesc').textContent = p.desc;
     document.getElementById('pmWa').href = p.wa;
+    // Set wompi button
+    var pmBuy = document.getElementById('pmBuy');
+    if (pmBuy) {
+      if (p.wompi) {
+        pmBuy.href = p.wompi;
+        pmBuy.style.display = 'inline-flex';
+      } else {
+        pmBuy.style.display = 'none';
+      }
+    }
     document.getElementById('pmSpecs').innerHTML = p.specs.map(([k,v]) =>
       '<div class="pm-spec"><span class="pm-spec-k">'+k+'</span><span class="pm-spec-v">'+v+'</span></div>'
     ).join('');
@@ -1075,6 +1092,15 @@ document.addEventListener('DOMContentLoaded', function() {
       e.stopPropagation();
       var id = el.getAttribute('data-prod');
       abrirProd(id);
+    });
+  });
+
+  // Wompi buttons on cards
+  document.querySelectorAll('[data-wompi]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var url = btn.getAttribute('data-wompi');
+      window.open(url, '_blank');
     });
   });
 
